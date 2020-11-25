@@ -371,6 +371,8 @@ footer {
 .project-text {
   padding: 20px 24px;
   margin: 0;
+  border: 1px solid var(--projects-border-line);
+  border-top: 1px solid transparent;
 }
 
 .projects-list a.link {
@@ -408,11 +410,6 @@ footer {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.project-text {
-  border: 1px solid var(--projects-border-line);
-  border-top: 1px solid transparent;
 }
 
 .projects-list .item:nth-child(3n) {
