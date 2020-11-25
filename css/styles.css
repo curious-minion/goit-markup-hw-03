@@ -46,7 +46,9 @@ p {
 }
 
 /* logo header+footer*/
-.head-nav .logo {
+
+.logo.header a {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -76,8 +78,6 @@ p {
 .logo {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo .logo-half,
@@ -135,11 +135,6 @@ p {
   margin-left: 50px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 /* hero */
 .hero {
   display: block;
@@ -163,6 +158,7 @@ p {
 }
 
 .hero a {
+  display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   margin-top: 0;
@@ -199,10 +195,18 @@ p {
 }
 
 /* Features */
-.features,
+.feature-list,
 .services {
-  margin-top: 94px;
+  padding-top: 94px;
   background-color: var(--basic-white);
+}
+
+.services {
+  padding-bottom: 94px;
+}
+
+img {
+  display: block;
 }
 
 .subtitle {
@@ -252,24 +256,27 @@ p {
 
 /* Team */
 .team {
-  margin-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--team-button-bgr);
 }
 
 .team-item {
+  width: 270px;
   background: var(--basic-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.name-position {
+  min-width: 76px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
-.team .title {
-  padding-top: 94px;
-}
-
 .names {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-color);
@@ -278,16 +285,12 @@ p {
   line-height: 1.19;
 }
 .job {
-  margin-top: 0;
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
 }
 
 /* Footer */
 footer {
-  margin-top: 94px;
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -323,8 +326,9 @@ footer {
 
 /* Portfolio */
 .projects {
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 0;
+  padding-bottom: 94px;
 }
 
 .buttons-menu .button {
