@@ -195,10 +195,14 @@ p {
 }
 
 /* Features */
-.feature-list,
+.features,
 .services {
   padding-top: 94px;
   background-color: var(--basic-white);
+}
+
+.container.features {
+  padding: 0;
 }
 
 .services {
@@ -256,6 +260,7 @@ img {
 
 /* Team */
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: var(--team-button-bgr);
@@ -273,11 +278,13 @@ img {
   min-width: 76px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
 }
 
 .names {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-color);
   font-weight: 700;
@@ -304,9 +311,7 @@ footer {
 
 .address {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 231px;
+  flex-direction: column;
   margin-top: 20px;
   color: var(--basic-white);
   font-style: normal;
